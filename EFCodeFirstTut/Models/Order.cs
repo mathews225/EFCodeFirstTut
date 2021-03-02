@@ -12,7 +12,7 @@ namespace EFCodeFirstTut.Models {
 		[StringLength(12), Required]
 		public string Status { get; set; }
 		[Column(TypeName ="decimal(9,2)")]
-		public decimal total { get; set; }
+		public decimal Total { get; set; }
 		public int CustomerId { get; set; }
 		public virtual Customer Customer { get; set; } // Set customer as foreign key
 	}
